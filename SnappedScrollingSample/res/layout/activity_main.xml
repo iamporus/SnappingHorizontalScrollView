@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.snappedscrollingsample.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/hello_world"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/selectedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:text="Jan"
+        android:textColor="#ff33b5e5"
+        android:textSize="50sp" />
+
+    <com.roomies.snappinghorizontalscrollview.SnappingHorizontalScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedText"
+        android:layout_marginTop="5dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+    </com.roomies.snappinghorizontalscrollview.SnappingHorizontalScrollView>
+
+</RelativeLayout>
